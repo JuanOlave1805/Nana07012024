@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap');
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+main{
+  background: url("SL-110622-53540-24.jpg")repeat;
+}
+.article{
+  /* background-color: red; */
+  height: 820px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom:1px solid black ;
+}
+.article2{
+  height: 450px;
+}
+.opacity{
+  background-color: rgb(155, 155, 155, .2);
+}
+
+.flex-horizon{
+  display: flex;
+  justify-content: space-evenly;
+  /* background-color: saddlebrown; */
+  align-items: center;
+  flex-direction: row;
+  max-width: 1020px;
+  margin: 0;
+  height: auto;
+}
+.figure{
+  width: auto;
+}
+.img{
+  height: 600px;
+  width: 400px;
+  border-radius:10% ;
+}
+.text{
+  /* background-color: rebeccapurple; */
+  display: flex;
+  /* margin: 0px 50px 0px 0px ; */
+  flex-direction: column;
+  /* height: 100%; */
+  justify-content: space-evenly;
+  /* background-color: royalblue; */
+}
+.text-center{
+  display: flex;
+  flex-direction: column;
+
+}
+.margin-right{
+  margin-right: 50px;
+}
+.text-broad{
+    width: 500px;
+    height: 400px;
+}
+.text-large{
+  height: 400px;
+}
+.text__justify{
+  text-align: justify;
+}
+.title-h1{
+  font-size: 30px ;
+}
+.title-h2{
+  font-size: 26px ;
+}

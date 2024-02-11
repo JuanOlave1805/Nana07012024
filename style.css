@@ -4,6 +4,7 @@
   margin: 0;
   padding: 0;
   font-family: 'Ubuntu', sans-serif;
+  font-size: 100%;
 }
 
 main{
@@ -19,7 +20,14 @@ main{
   border-bottom:1px solid black ;
 }
 .article2{
-  height: 450px;
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom:1px solid black ;
+}
+.article-column{
+  flex-direction: column; 
 }
 .opacity{
   background-color: rgb(155, 155, 155, .2);
@@ -39,13 +47,14 @@ main{
   width: auto;
 }
 .img{
-  height: 600px;
-  width: 400px;
+  height: 500px;
+  width: 350px;
   border-radius:10% ;
 }
-.text{
+.flex-column{
   /* background-color: rebeccapurple; */
   display: flex;
+  max-width: 1020px;
   /* margin: 0px 50px 0px 0px ; */
   flex-direction: column;
   /* height: 100%; */
@@ -60,19 +69,39 @@ main{
 .margin-right{
   margin-right: 50px;
 }
+.margin-top{
+  margin-top: 1em;
+}
 .text-broad{
     width: 500px;
     height: 400px;
 }
 .text-large{
-  height: 400px;
+  height: 200px;
 }
 .text__justify{
   text-align: justify;
 }
+.text{
+  font-size: 1.2em;
+}
+.text__Center{
+  text-align: center;
+}
 .title-h1{
-  font-size: 30px ;
+  /* font-size: calc(2rem + 2vw) */
+  font-size: 3em;
 }
 .title-h2{
-  font-size: 26px ;
+  /* font-size:2vw ; */
+  /* font-size: calc(1.5rem + 1.5vw); */
+  font-size: 2em;
+}
+.card{
+  padding: 3rem 2rem 3rem 2rem;
+  width: 80%;
+  height: 120%;
+}
+.gap{
+  gap: 10px;
 }

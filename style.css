@@ -417,7 +417,7 @@ html{
 
   /* button */
   .button:hover{
-    
+    border-bottom: solid transparent 1px;
   }
 }
 
@@ -430,6 +430,11 @@ html{
   /* height */
   .article--height{
     height: 80vh;
+  }
+  /* nav */
+  .toggle-menu{
+    right: 1rem;
+    top: 1rem;
   }
   /* titles */
   .title-h1{
@@ -466,11 +471,12 @@ html{
   /* card */
   .card{
     width: 80vw;
-    height: 20vh;
+    height: 30vh;
   }
   /* clases extra */
   .media-column{
     display: flex;
     flex-direction: column;
   }
+  
 }

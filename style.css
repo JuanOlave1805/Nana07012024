@@ -373,6 +373,9 @@ html{
     width: 40vw;
     height: auto;
   }
+  .img3{
+    width: 10vw;
+  }
   /* nav */
   .nav{
     width: 90vw;
@@ -477,6 +480,9 @@ html{
   .media-column{
     display: flex;
     flex-direction: column;
+  }
+  .text-title-2{
+    font-size: 1rem;
   }
   
 }

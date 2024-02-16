@@ -24,8 +24,16 @@ html{
   justify-content: center;
   position: fixed;
   background-color: var(--Gris_Suave);
+}
+
+/* Z-index */
+.z-index-1{
+  z-index: 1;
+}
+.z-index-2{
   z-index: 2;
 }
+
 
 /* nav  */
 .nav{
@@ -202,7 +210,7 @@ html{
 .button_nav{
   text-decoration: none;
   font-size: 1.5em;
-  transition: background-color 0.5s ease, transform 0.5s ease;
+ 
 }
 .button_nav:hover{
   border-bottom: solid var(--Azul_Marino) 2px;
@@ -210,14 +218,15 @@ html{
 .button_nav--edit{
   padding: 10px;
   border-radius: 10px;
+  transition: 0.5s ease, transform 0.5s ease;
+
 }
 .button_nav--edit:hover{
-  transition: all .3;
-  transform: scale(1.1);
+  padding: 15px;
 }
 .button {
   padding: 10px;
-  border: solid black .5px ;
+  border: solid var(--Azul_Marino) .5px ;
   border-radius: 10px;
   cursor: pointer;
   /* background-color: #2D0F44;   */
@@ -227,10 +236,16 @@ html{
 }
 .button-2 {
   border: none; /* Sin borde */
-  padding: 15px 30px; /* Relleno interior */
+  padding: 15px 30px; /*  Relleno interior */
   border-radius: 20px; /* Bordes redondeados */
   cursor: pointer; /* Cambiar el cursor al pasar por encima */
   margin-right: 20px; /* Margen derecho */
+}
+.button-2:hover{
+  padding: 20px 35px
+}
+.button-2 a{
+  text-decoration: none;
 }
 
 
@@ -311,14 +326,6 @@ html{
 /* Estilo para la imagen dentro de los botones */
 
 /* footer */
-.footer {
-  padding: 20px 0; /* Espacio interno */
-}
-
-.footer-content {
-  max-width: 1200px; /* Ancho máximo del contenido */
-  margin: 0 auto; /* Centrar el contenido horizontalmente */
-}
 
 .footer-links {
   list-style: none; /* Eliminar viñetas de la lista */
@@ -341,9 +348,12 @@ html{
 
 /* Table */
 @media (max-width: 768px){
+  /* padding */
   .padding{
     padding: 5px;
   }
+
+
   /* titles */
   .title-h1{
     font-size: 2em;
@@ -357,6 +367,8 @@ html{
   .title-h4{
     font-size: 0.8em;
   }
+
+
   /* text */
   .text{
     font-size: 0.9em;
@@ -364,10 +376,14 @@ html{
   .text-paragraph{
     font-size: 0.7em;
   }
+
+
   /* link */
   .link{
     font-size: 0.9em;
   }
+
+
   /* img */
   .img{
     width: 40vw;
@@ -376,6 +392,8 @@ html{
   .img3{
     width: 10vw;
   }
+  
+  
   /* nav */
   .nav{
     width: 90vw;
@@ -384,8 +402,14 @@ html{
     background-color: transparent;
     color: var(--Azul_Marino);
     padding: 0;
+    border-radius: 0;
+  }
+  
+  .button_nav--edit:hover{
+    padding: 0;
   }
 
+  
   /* toggle */
   .toggle-menu{
     display: block;
@@ -402,8 +426,8 @@ html{
   }
   .main-menu{
     list-style: none;
-    width: 50%;
-    height: 60vh;
+    width: 100vw;
+    height: 100vh;
     position: absolute;
     right: 0;
 
@@ -413,10 +437,12 @@ html{
     justify-content: space-around;
     background-color: var(--Gris_Suave);
     transform: translateY(-100%);
+    transition: 0.5s ease, transform 0.5s ease;
   }
   .main-menu--show{
     transform: translateY(0);
   }
+
 
   /* button */
   .button:hover{
@@ -427,6 +453,7 @@ html{
 
 /* Mobil */
 @media (max-width: 525px  ){
+  /* articulo */
   .article{
     padding: 20px;
   }
@@ -434,11 +461,15 @@ html{
   .article--height{
     height: 80vh;
   }
+
+
   /* nav */
   .toggle-menu{
     right: 1rem;
     top: 1rem;
   }
+
+
   /* titles */
   .title-h1{
     font-size: 1.5em;
@@ -452,6 +483,8 @@ html{
   .title-h4{
     font-size: 0.7em;
   }
+
+
   /* text */
   .text{
     font-size: 0.8em;
@@ -462,27 +495,35 @@ html{
   .text-paragraph{
     font-size: 0.6em;
   }
+
+
   /* link */
   .link{
     font-size: 0.9em;
   }
+
+
   /* img */
   .img{
     width: 40vw;
     height: auto;
   }
+
+  
   /* card */
   .card{
     width: 80vw;
     height: 30vh;
   }
+
+
   /* clases extra */
   .media-column{
     display: flex;
     flex-direction: column;
   }
   .text-title-2{
-    font-size: 1rem;
+    font-size: .9em;
   }
   
 }
